@@ -43,7 +43,7 @@
                         <img src="assets/images/logo-final.webp" alt="Mobirise Website Builder" style="height: 3.8rem;">
                     
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">Sistema de monitoreo - Enfermedad de Parkinson</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="index.html">Sistema de monitoreo - Parkinson</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -56,7 +56,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#team1-u">Nosotros</a></li>
                     <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Proyecto</a><div class="dropdown-menu" aria-labelledby="dropdown-221"><div class="dropdown"><a class="text-black dropdown-item text-primary dropdown-toggle show display-4" href="hito1.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">HITO 1<br></a><div class="dropdown-menu dropdown-submenu show" aria-labelledby="dropdown-509" data-bs-popper="none"><a class="text-black dropdown-item text-primary display-4" href="hito1.html">Marco teórico</a><a class="text-black dropdown-item text-primary show display-4" href="page2.html">Planteamiento del problema</a></div></div><div class="dropdown"><a class="text-black dropdown-item dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">HITO 2</a><div class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown-721"><a class="text-black show dropdown-item text-primary display-4" href="page3.html">Estado del arte</a><a class="text-black show dropdown-item text-primary display-4" href="page4.html">Ideando solución</a></div></div><div class="dropdown"><a class="text-black dropdown-item dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">HITO 3</a><div class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown-568"><a class="text-black show dropdown-item text-primary display-4" href="page5.html">Consideraciones de diseño</a><a class="text-black show dropdown-item text-primary display-4" href="page6.html">Subfunciones</a></div></div><a class="text-black dropdown-item text-primary display-4" href="page7.html" aria-expanded="false">HITO 4</a></div></li></ul>
-                
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://github.com/vanessadiaza/biodise-o1.git" target="_blank">
+                        <span class="p-2 mbr-iconfont mobi-mbri-github mobi-mbri"></span>
+                    </a>
+                    
+                    
+                    
+                </div>
                 
             </div>
         </div>
@@ -173,12 +180,12 @@
                     <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
                         <div class="card mb-3">
                             <div class="card-header" role="tab" id="headingOne">
-                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_102" aria-expanded="false" aria-controls="collapse1">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_20" aria-expanded="false" aria-controls="collapse1">
                                     <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Brazalete: Obtencion de data del acelerómetro</strong></h6>
                                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                                 </a>
                             </div>
-                            <div id="collapse1_102" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapse1_20" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <p class="mbr-fonts-style panel-text display-7">#include <arduino_lsm6ds3.h>
 <br>float x, y, z, xa, ya, za;
@@ -210,28 +217,758 @@
                         </div>
                         <div class="card mb-3">
                             <div class="card-header" role="tab" id="headingTwo">
-                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_102" aria-expanded="false" aria-controls="collapse2">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_20" aria-expanded="false" aria-controls="collapse2">
                                     <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Brazalete: Procesamiento de la señal</strong></h6>
                                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                                 </a>
 
                             </div>
-                            <div id="collapse2_102" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div id="collapse2_20" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    <p class="mbr-fonts-style panel-text display-7">Mobirise Kit is a service that provides the access to all current and new themes/extensions developed by Mobirise. New themes/extensions are released every month and will be available in your account during your plan period, without any additional charge.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">import tkinter as tk #importamos libreria para la interfaz
+<br>import serial #importamos libreria para la comunicación de bluetooth
+<br>import serial,time
+<br>import matplotlib.pyplot as plt
+<br>import numpy as np
+<br>from scipy.fftpack import fft, fftfreq
+<br>from scipy import signal
+<br>from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+<br>import plotly.graph_objects as go
+<br>from scipy.signal import find_peaks
+<br>
+<br>#declaro el puerto de comunicación
+<br>arduinoData=serial.Serial('COM3', 9600) #declaro la comunicación
+<br>
+<br>class Window(tk.Tk):
+<br>    def __init__(self):
+<br>        super().__init__() #heredamos los atributos de tkinter
+<br>        self.title("INTERFAZ") #Nombre de la ventana
+<br>        self.geometry('1400x720') #dimensiones de la ventana
+<br>        self.configure(background='yellow green')
+<br>
+<br>        self.var_texto1=tk.StringVar() #declaro variables de texto que se usarán en los entrys
+<br>        self.var_texto2=tk.StringVar()
+<br>        
+<br>        self.yuyframe=tk.Frame(self, bg='yellow green') #diseño del espacio de la ventana
+<br>        self.bottomframe=tk.Frame(self, bg='yellow green')
+<br>
+<br>        l1=tk.Label(self.yuyframe, text="Tremor Detector", font=('Arial','60'), justify=tk.CENTER, pady=200, bg='yellow green', fg='SlateBlue4') #Nombre
+<br>        self.b1 = tk.Button(self.bottomframe, text="Nuevo", command=self.Nuevo, padx=60, pady=50, bg='lime green') #creo botones
+<br>        self.b20=tk.Button(self.bottomframe, text="Buscar", padx=60, pady=50, bg='lime green')#command=self.Buscar)
+<br>
+<br>        self.yuyframe.pack() #hago el display de los frames
+<br>        self.bottomframe.pack()
+<br>
+<br>        l1.pack() #display de los widgets
+<br>        self.b1.pack(side=tk.LEFT, padx=100)
+<br>        self.b20.pack(side=tk.RIGHT, padx=100)
+<br>
+<br>        
+<br>
+<br>        
+<br>
+<br>    def printear (self, event):
+<br>        
+<br>        positionx = event.x #adquiero las posiciones en donde se da el evento
+<br>        positiony = event.y
+<br>        if positionx&gt;155 and positionx&lt;225: #uso condicionales para discriminar posiciones en donde se hace click y hacer el display respectivo del electrodo
+<br>            if positiony&gt;250 and positiony&lt;320:
+<br>                self.canvas2.delete('all')
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>                SLPC = 0
+<br>                umbral = 0.2
+<br>                for i in range(1,len(self.X)-1):
+<br>                    s = (self.X[i] - self.X[i-1])*(self.X[i] - self.X[i+1])
+<br>                    if s &gt;= umbral:
+<br>                        a = 1
+<br>                    else:
+<br>                        a = 0
+<br>                    SLPC = SLPC + a
+<br>                #plt.plot(n,self.xfw)
+<br>                    
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(n,self.xfw)
+<br>                
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>
+<br>            if positiony&gt;330 and positiony&lt;400:
+<br>                self.canvas2.delete('all')
+<br>                
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>                
+<br>                    
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(n,self.yfw)
+<br>                
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>            if  positiony&gt;410 and positiony&lt;480:
+<br>
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>               
+<br>                
+<br>                    
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(n,self.zfw)
+<br>                
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>        if positionx&gt;275 and positionx&lt;345:
+<br>            if positiony&gt;250 and positiony&lt;320:
+<br>                self.canvas2.delete('all')
+<br>                
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>                
+<br>
+<br>                #Para hallar los picos del movimiento 
+<br>                height_threshold=0.15 # We need a threshold. 
+<br>                # peaks_index contains the indices in x that correspond to peaks:
+<br>                peaks_index, properties = find_peaks(np.abs(self.X), height=height_threshold)
+<br>                print('Posición y magnitudes de picos de frecuencia en x:')
+<br>                [print("%4.4f    \t %3.4f" %(frq[peaks_index[i]], properties['peak_heights'][i])) for i in range(len(peaks_index))]
+<br>                peaks_indexy, propertiesy = find_peaks(np.abs(self.Y), height=height_threshold)
+<br>                print('Posición y magnitudes de picos de frecuencia en y:')
+<br>                [print("%4.4f    \t %3.4f" %(frq[peaks_indexy[a]], propertiesy['peak_heights'][a])) for a in range(len(peaks_indexy))]
+<br>                peaks_indexz, propertiesz = find_peaks(np.abs(self.Z), height=height_threshold)
+<br>                print('Posición y magnitudes de picos de frecuencia en z:')
+<br>                [print("%4.4f    \t %3.4f" %(frq[peaks_indexz[b]], propertiesz['peak_heights'][b])) for b in range(len(peaks_indexz))]
+<br>
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(frq, np.abs(self.X),'-', frq[peaks_index],properties['peak_heights'],'x')
+<br>                axs=plt.ylim(0,1)
+<br>                
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>
+<br>            if positiony&gt;330 and positiony&lt;400:
+<br>                self.canvas2.delete('all')
+<br>               
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>                SLPC = 0
+<br>                umbral = 0.2
+<br>                for i in range(1,len(self.X)-1):
+<br>                    s = (self.X[i] - self.X[i-1])*(self.X[i] - self.X[i+1])
+<br>                    if s &gt;= umbral:
+<br>                        a = 1
+<br>                    else:
+<br>                        a = 0
+<br>                    SLPC = SLPC + a
+<br>                
+<br>                #Para hallar los picos del movimiento 
+<br>                height_threshold=0.15
+<br>                 # We need a threshold. 
+<br>                # peaks_index contains the indices in x that correspond to peaks:
+<br>                peaks_index, properties = find_peaks(np.abs(self.X), height=height_threshold)
+<br>                peaks_indexy, propertiesy = find_peaks(np.abs(self.Y), height=height_threshold)
+<br>                peaks_indexz, propertiesz = find_peaks(np.abs(self.Z), height=height_threshold)
+<br>
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(frq, np.abs(self.Y),'-', frq[peaks_indexy],propertiesy['peak_heights'],'x')
+<br>                axs=plt.ylim(0,1)
+<br>            
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>            if  positiony&gt;410 and positiony&lt;480:
+<br>                self.canvas2.delete('all')
+<br>                
+<br>                fs=104
+<br>                N=1000
+<br>                nyq = 0.5*fs
+<br>                n=list(range(0,N))
+<br>                t=1/fs
+<br>                frq=fftfreq(N,t)
+<br>                SLPC = 0
+<br>                umbral = 0.2
+<br>                for i in range(1,len(self.X)-1):
+<br>                    s = (self.X[i] - self.X[i-1])*(self.X[i] - self.X[i+1])
+<br>                    if s &gt;= umbral:
+<br>                        a = 1
+<br>                    else:
+<br>                        a = 0
+<br>                    SLPC = SLPC + a
+<br>                
+<br>                #Para hallar los picos del movimiento 
+<br>                height_threshold=0.15# We need a threshold. 
+<br>                # peaks_index contains the indices in x that correspond to peaks:
+<br>                peaks_index, properties = find_peaks(np.abs(self.X), height=height_threshold)
+<br>                peaks_indexy, propertiesy = find_peaks(np.abs(self.Y), height=height_threshold)
+<br>                peaks_indexz, propertiesz = find_peaks(np.abs(self.Z), height=height_threshold)
+<br>
+<br>                fig, axs=plt.subplots(1,1)
+<br>                axs = plt.plot(frq, np.abs(self.Z),'-', frq[peaks_indexz],propertiesz['peak_heights'],'x')
+<br>                axs=plt.ylim(0,1)
+<br>              
+<br>                
+<br>                canvas=FigureCanvasTkAgg(fig,master=self.canvas2)
+<br>                canvas.draw()
+<br>                canvas.get_tk_widget().grid(column=0, row=0)
+<br>
+<br>
+<br>    def startComm(self):
+<br>        
+<br>        fs=104
+<br>        N=1000
+<br>        nyq = 0.5*fs
+<br>        n=list(range(0,N))
+<br>        t=1/fs
+<br>        
+<br>        xl=[]
+<br>        yl=[]
+<br>        zl=[]
+<br>        a=True
+<br>        
+<br>        while a:
+<br>           
+<br>            while(arduinoData.inWaiting()==0):
+<br>                pass
+<br>
+<br>         
+<br>            dataPacket = arduinoData.readline()
+<br>            dataPacket = str(dataPacket,'utf-8')
+<br>            dataPacket = dataPacket.strip('\r\n')
+<br>            splitPacket = dataPacket.split(",")
+<br>            x = float(splitPacket[0])
+<br>            y = float(splitPacket[1])
+<br>            z = float(splitPacket[2])-9.8
+<br>            xl.append(x)
+<br>            yl.append(y)
+<br>            zl.append(z)
+<br>        
+<br>            #print("X=",x,"Y=",y,"Z=",z)
+<br>            if len(xl)==1000:
+<br>                a=False
+<br>            if len(yl)==1000:
+<br>                a=False
+<br>            if len(zl)==1000:
+<br>                a=False
+<br>        
+<br>
+<br>
+<br>        order = 2
+<br>        [xlow,xhigh] = self.filtering_signal(xl,nyq,order)
+<br>        [ylow,yhigh] = self.filtering_signal(yl,nyq,order)
+<br>        [zlow,zhigh] = self.filtering_signal(zl,nyq,order)
+<br>
+<br>        xf = self.passband_filter(xhigh,order,nyq)
+<br>        yf = self.passband_filter(yhigh,order,nyq)
+<br>        zf = self.passband_filter(zhigh,order,nyq)
+<br>
+<br>        self.xfw = self.window_signal(N,xf)
+<br>        self.yfw = self.window_signal(N,yf)
+<br>        self.zfw = self.window_signal(N,zf)
+<br>
+<br>        self.X = self.fourier_transform(N,self.xfw)
+<br>        self.Y = self.fourier_transform(N,self.yfw)
+<br>        self.Z = self.fourier_transform(N,self.zfw)
+<br>        
+<br>                   
+<br>
+<br>        time.sleep(0.1)
+<br>        #print(X+','+Y)
+<br>
+<br>    def endComm(self):
+<br>        self.ex3.withdraw() #se termina el examen y se pasa a ventana principal
+<br>        self.deiconify()
+<br>        
+<br>        
+<br>        
+<br>
+<br>    def Nuevo(self):
+<br>        self.withdraw() #se cierra la ventana principal
+<br>        self.New=tk.Toplevel() #se crea una nueva ventana
+<br>        self.New.geometry('1400x720') #dimensiones de la nueva ventana
+<br>        self.New.configure(background='yellow green')
+<br>        l2=tk.Label(self.New, text='Datos del paciente', font=('Arial', '40'), bg='yellow green') #label
+<br>        l2.pack() #display del label
+<br>
+<br>        self.e1 = tk.Entry(self.New, textvariable=self.var_texto1, width=50, bg='lime green') #Se definen 2 entrys
+<br>        #                                       que se usarán para el input de los datos del paciente
+<br>        
+<br>        self.e2=tk.Entry(self.New, textvariable=self.var_texto2, width=50, bg='lime green')
+<br>        
+<br>        self.l3=tk.Label(self.New, text='Nombres y apellidos: ', pady=10, bg= 'yellow green') #título de cada entry
+<br>        self.l4=tk.Label(self.New, text='DNI: ', pady=10, bg='yellow green')
+<br>
+<br>        
+<br>        self.l3.pack(pady=10) #display de cada objeto en la ventana
+<br>        self.e1.pack(pady=10)
+<br>        self.l4.pack(pady=10)
+<br>        self.e2.pack(pady=10)
+<br>        
+<br>        b2=tk.Button(self.New, text='Continuar', command= self.instrucciones, padx=25, pady=12, bg='lime green') #boton para continuar
+<br>        #                                                                              con la siguiente ventana
+<br>        b2.pack(pady=10)
+<br>
+<br>
+<br>    def instrucciones(self):
+<br>        self.New.withdraw()
+<br>        self.ins=tk.Toplevel()
+<br>        self.ins.geometry('1400x720')
+<br>        self.ins.configure(bg='yellow green')
+<br>        self.l5=tk.Label(self.ins, text='Instrucciones', bg='yellow green')
+<br>        self.l5.config(font=('Helvetica bold', 50))
+<br>        self.l5.pack(pady=100)
+<br>        self.l6=tk.Label(self.ins, text='1) Ponerse el dispositivo como si fuera un reloj', font=('Arial, 20'), bg='yellow green')
+<br>        self.l7=tk.Label(self.ins, text='2) Cerrar la correa', font=('Arial, 20'), bg='yellow green')
+<br>        self.l8=tk.Label(self.ins, text='3) Ajustar la correa de manera que esté firme, pero cómoda con el dispositivo', font=('Arial, 20'), bg='yellow green')
+<br>        self.l6.pack()
+<br>        self.l7.pack()
+<br>        self.l8.pack()
+<br>        b30=tk.Button(self.ins, text='Listo', command= self.examen1, padx=25, pady=12, bg='lime green')
+<br>        b30.pack(pady=100)
+<br>
+<br>
+<br>    def examen1(self):
+<br>        self.a=self.var_texto1.get() #adquirimos los datos del paciente
+<br>        self.b=self.var_texto2.get()
+<br>        self.var_texto1.set("") #borramos todo
+<br>        self.var_texto2.set("")
+<br>        print(self.a) #hacemos print de lo adquirido
+<br>        print(self.b)
+<br>        self.ins.withdraw() #cerramos ventana
+<br>        self.ex1=tk.Toplevel() #creamos nueva ventana para el examen
+<br>        self.ex1.configure(bg='yellow green')
+<br>
+<br>        l5=tk.Label(self.ex1, text="Paciente:", font=('Arial', '10'), bg='yellow green') #información del paciente
+<br>        l6=tk.Label(self.ex1, text=self.a, bg='yellow green')
+<br>        l7=tk.Label(self.ex1, text="DNI:", font=('Arial', '10'), bg='yellow green')
+<br>        l8=tk.Label(self.ex1, text=self.b, bg='yellow green')
+<br>        
+<br>        l5.grid(row=0, column=0) #organización de la ventana
+<br>        l6.grid(row=0, column=1)
+<br>        l7.grid(row=1, column=0)
+<br>        l8.grid(row=1, column=1)
+<br>        
+<br>        
+<br>        self.ex1.geometry('1400x720') #dimensiones de la ventana
+<br>
+<br>        
+<br>        self.canvas1=tk.Canvas(self.ex1, width=500, height=500, background='yellow green') #gráfica
+<br>        self.canvas1.grid(row=2, column=0, columnspan=2, sticky=tk.N)
+<br>
+<br>        self.lb10=tk.Label(self.ex1, text='Examen 1 : Temblor en reposo', bg='yellow green')
+<br>        self.lb10.config(font=('Helvetica bold', 25))
+<br>
+<br>        self.lb10.grid(row=0, column=2, rowspan=2)
+<br>
+<br>        self.canvas2=tk.Canvas(self.ex1, width=900, height=500, background='yellow green')
+<br>        
+<br>        self.canvas2.grid(row=2, column=2, rowspan=2)
+<br>
+<br>        
+<br>        
+<br>        self.canvas1.create_oval(155, 250, 225, 320, fill='red', tags="CL1")
+<br>        self.canvas1.create_oval(155, 330, 225, 400, fill='red', tags="CL2")
+<br>        self.canvas1.create_oval(155, 410, 225, 480, fill='red', tags="CL3")
+<br>        
+<br>        self.canvas1.create_oval(275, 250, 345, 320, fill='blue', tags="CR1")
+<br>        self.canvas1.create_oval(275, 330, 345, 400, fill='blue', tags="CR2")
+<br>        self.canvas1.create_oval(275, 410, 345, 480, fill='blue', tags="CR3")
+<br>        
+<br>        self.canvas1.create_text(310, 285, text = "FFTX", font = "Times 15", tags = "R1") 
+<br>        self.canvas1.create_text(310, 365, text = "FFTY", font = "Times 15", tags = "R2")
+<br>        self.canvas1.create_text(310, 445, text = "FFTZ", font = "Times 15", tags = "R3")
+<br>
+<br>        self.canvas1.create_text(190, 285, text = "X", font = "Times 15", tags = "L1")
+<br>        self.canvas1.create_text(190, 365, text = "Y", font = "Times 15", tags = "L2")
+<br>        self.canvas1.create_text(190, 445, text = "Z", font = "Times 15", tags = "L3")
+<br>
+<br>        b3=tk.Button(self.ex1, text="Empezar", padx=10, pady=20, command=self.startComm, bg='lime green') #al apretar start
+<br>        #                                                                           se empieza el examen
+<br>        b4=tk.Button(self.ex1, text="Siguiente", padx=10, pady=20, command=self.peaks1, bg='lime green') #se termina el examen
+<br>        
+<br>        b3.grid(row=3, column=0, sticky=tk.N) #organización de los botones
+<br>        b4.grid(row=3, column=1, sticky=tk.N)
+<br>        
+<br>        
+<br>        self.canvas1.bind('<button-1>', self.printear) #lo que va a hacer que se puedan seleccionar los
+<br>        #                                               circulos para ver lasdiferentes gráficas obtenidas
+<br>        #                                               mediante la recolección y el procesamiento de datos
+<br>
+<br>    def peaks1(self):
+<br>        self.ex1.withdraw()
+<br>        self.peaks1=tk.Toplevel()
+<br>        self.peaks1.configure(bg='yellow green')
+<br>        self.peaks1.geometry('1400x720')
+<br>
+<br>        
+<br>
+<br>        #Para hallar los picos del movimiento 
+<br>        height_threshold=0.15
+<br>        # We need a threshold. 
+<br>        # peaks_index contains the indices in x that correspond to peaks:
+<br>        peaks_index, properties = find_peaks(np.abs(self.X), height=height_threshold)
+<br>        peaks_indexy, propertiesy = find_peaks(np.abs(self.Y), height=height_threshold)
+<br>        peaks_indexz, propertiesz = find_peaks(np.abs(self.Z), height=height_threshold)
+<br>
+<br>        lb1=tk.Label(self.peaks1, text="Positions and magnitudes of frequency peaks in X:", font=('Arial', '30'), bg='yellow green')
+<br>        text1=""
+<br>        for i in range(len(peaks_index)):
+<br>            text1=text1 + str(frq[peaks_index[i]] + ',' + properties['peak_heights'][i]) + ' '
+<br>        lb2=tk.Label(self.peaks1, text=text1, font=('Arial', '15'), bg='yellow green')
+<br>
+<br>        lb3=tk.Label(self.peaks1, text="Positions and magnitudes of frequency peaks in Y:", font=('Arial', '30'), bg='yellow green')
+<br>        
+<br>        for a in range(len(peaks_indexy)):
+<br>            text2=text2 + str(frq[peaks_index[a]] + ',' + properties['peak_heights'][a]) + ' '
+<br>        lb4=tk.Label(self.peaks1, text=text2, font=('Arial', '15'), bg='yellow green')
+<br>
+<br>        lb5=tk.Label(self.peaks1, text="Positions and magnitudes of frequency peaks in Z:", font=('Arial', '30'), bg='yellow green')
+<br>
+<br>        for b in range(len(peaks_indexz)):
+<br>            text3=text3 + str(frq[peaks_index[b]] + ',' + properties['peak_heights'][b]) + ' '
+<br>        lb6=tk.Label(self.peaks1, text=text3, font=('Arial', '15'), bg='yellow green')
+<br>
+<br>        lb1.pack(pady=10)
+<br>        lb2.pack(pady=10)
+<br>        lb3.pack(pady=10)
+<br>        lb4.pack(pady=10)
+<br>        lb5.pack(pady=10)
+<br>        lb6.pack(pady=10)
+<br>        
+<br>        btn=tk.Button(self.peaks1, text="Continuar", padx=10, pady=20, command=self.examen2, bg='lime green')
+<br>
+<br>    def examen2(self):
+<br>        self.peaks1.withdraw() #cerramos ventana
+<br>        self.ex2=tk.Toplevel() #creamos nueva ventana para el examen
+<br>        self.ex2.configure(bg='yellow green')
+<br>
+<br>        l5=tk.Label(self.ex2, text="Paciente:", font=('Arial', '10'), bg='yellow green') #información del paciente
+<br>        l6=tk.Label(self.ex2, text=self.a, bg='yellow green')
+<br>        l7=tk.Label(self.ex2, text="DNI:", font=('Arial', '10'), bg='yellow green')
+<br>        l8=tk.Label(self.ex2, text=self.b, bg='yellow green')
+<br>        
+<br>        l5.grid(row=0, column=0) #organización de la ventana
+<br>        l6.grid(row=0, column=1)
+<br>        l7.grid(row=1, column=0)
+<br>        l8.grid(row=1, column=1)
+<br>        
+<br>        
+<br>        self.ex2.geometry('1400x720') #dimensiones de la ventana
+<br>
+<br>        
+<br>        self.canvas1=tk.Canvas(self.ex2, width=500, height=500, background='yellow green') #gráfica
+<br>        self.canvas1.grid(row=2, column=0, columnspan=2, sticky=tk.N)
+<br>
+<br>        self.lb10=tk.Label(self.ex2, text='Examen 2 :Temblor activo', bg='yellow green')
+<br>        self.lb10.config(font=('Helvetica bold', 25))
+<br>
+<br>        self.lb10.grid(row=0, column=2, rowspan=2)
+<br>
+<br>        self.canvas2=tk.Canvas(self.ex2, width=900, height=700, background='yellow green')
+<br>        
+<br>        self.canvas2.grid(row=2, column=2, rowspan=2)
+<br>
+<br>        
+<br>        
+<br>        self.canvas1.create_oval(155, 250, 225, 320, fill='red', tags="CL1")
+<br>        self.canvas1.create_oval(155, 330, 225, 400, fill='red', tags="CL2")
+<br>        self.canvas1.create_oval(155, 410, 225, 480, fill='red', tags="CL3")
+<br>        
+<br>        self.canvas1.create_oval(275, 250, 345, 320, fill='blue', tags="CR1")
+<br>        self.canvas1.create_oval(275, 330, 345, 400, fill='blue', tags="CR2")
+<br>        self.canvas1.create_oval(275, 410, 345, 480, fill='blue', tags="CR3")
+<br>        
+<br>        self.canvas1.create_text(310, 285, text = "FFTX", font = "Times 15", tags = "R1") 
+<br>        self.canvas1.create_text(310, 365, text = "FFTY", font = "Times 15", tags = "R2")
+<br>        self.canvas1.create_text(310, 445, text = "FFTZ", font = "Times 15", tags = "R3")
+<br>
+<br>        self.canvas1.create_text(190, 285, text = "X", font = "Times 15", tags = "L1")
+<br>        self.canvas1.create_text(190, 365, text = "Y", font = "Times 15", tags = "L2")
+<br>        self.canvas1.create_text(190, 445, text = "Z", font = "Times 15", tags = "L3")
+<br>
+<br>        b3=tk.Button(self.ex2, text="Empezar", padx=10, pady=20, command=self.startComm, bg='lime green') #al apretar start
+<br>        #                                                                           se empieza el examen
+<br>        b4=tk.Button(self.ex2, text="Siguiente", padx=10, pady=20, command=self.examen3, bg='lime green') #se termina el examen
+<br>        
+<br>        b3.grid(row=3, column=0, sticky=tk.N) #organización de los botones
+<br>        b4.grid(row=3, column=1, sticky=tk.N)
+<br>        
+<br>        
+<br>        self.canvas1.bind('<button-1>', self.printear) #lo que va a hacer que se puedan seleccionar los
+<br>        #                                               circulos para ver lasdiferentes gráficas obtenidas
+<br>        #                                               mediante la recolección y el procesamiento de datos
+<br>
+<br>    def examen3(self):
+<br>        self.ex2.withdraw() #cerramos ventana
+<br>        self.ex3=tk.Toplevel() #creamos nueva ventana para el examen
+<br>        self.ex3.configure(bg='yellow green')
+<br>
+<br>        l5=tk.Label(self.ex3, text="Paciente:", font=('Arial', '10'), bg='yellow green') #información del paciente
+<br>        l6=tk.Label(self.ex3, text=self.a, bg='yellow green')
+<br>        l7=tk.Label(self.ex3, text="DNI:", font=('Arial', '10'), bg='yellow green')
+<br>        l8=tk.Label(self.ex3, text=self.b, bg='yellow green')
+<br>        
+<br>        l5.grid(row=0, column=0) #organización de la ventana
+<br>        l6.grid(row=0, column=1)
+<br>        l7.grid(row=1, column=0)
+<br>        l8.grid(row=1, column=1)
+<br>        
+<br>        
+<br>        self.ex3.geometry('1400x720') #dimensiones de la ventana
+<br>
+<br>        
+<br>        self.canvas1=tk.Canvas(self.ex3, width=500, height=500, background='yellow green') #gráfica
+<br>        self.canvas1.grid(row=2, column=0, columnspan=2, sticky=tk.N)
+<br>
+<br>        self.lb10=tk.Label(self.ex3, text='Examen 3 :Temblor activo en movimiento', bg='yellow green')
+<br>        self.lb10.config(font=('Helvetica bold', 25))
+<br>
+<br>        self.lb10.grid(row=0, column=2, rowspan=2)
+<br>
+<br>        self.canvas2=tk.Canvas(self.ex3, width=900, height=700, background='yellow green')
+<br>        
+<br>        self.canvas2.grid(row=2, column=2, rowspan=2)
+<br>
+<br>        
+<br>        
+<br>        self.canvas1.create_oval(155, 250, 225, 320, fill='red', tags="CL1")
+<br>        self.canvas1.create_oval(155, 330, 225, 400, fill='red', tags="CL2")
+<br>        self.canvas1.create_oval(155, 410, 225, 480, fill='red', tags="CL3")
+<br>        
+<br>        self.canvas1.create_oval(275, 250, 345, 320, fill='blue', tags="CR1")
+<br>        self.canvas1.create_oval(275, 330, 345, 400, fill='blue', tags="CR2")
+<br>        self.canvas1.create_oval(275, 410, 345, 480, fill='blue', tags="CR3")
+<br>        
+<br>        self.canvas1.create_text(310, 285, text = "FFTX", font = "Times 15", tags = "R1") 
+<br>        self.canvas1.create_text(310, 365, text = "FFTY", font = "Times 15", tags = "R2")
+<br>        self.canvas1.create_text(310, 445, text = "FFTZ", font = "Times 15", tags = "R3")
+<br>
+<br>        self.canvas1.create_text(190, 285, text = "X", font = "Times 15", tags = "L1")
+<br>        self.canvas1.create_text(190, 365, text = "Y", font = "Times 15", tags = "L2")
+<br>        self.canvas1.create_text(190, 445, text = "Z", font = "Times 15", tags = "L3")
+<br>
+<br>        b3=tk.Button(self.ex3, text="Empezar", padx=10, pady=20, command=self.startComm, bg='lime green') #al apretar start
+<br>        #                                                                           se empieza el examen
+<br>        b4=tk.Button(self.ex3, text="Terminar", padx=10, pady=20, command=self.endComm, bg='lime green') #se termina el examen
+<br>        
+<br>        b3.grid(row=3, column=0, sticky=tk.N) #organización de los botones
+<br>        b4.grid(row=3, column=1, sticky=tk.N)
+<br>        
+<br>        
+<br>        self.canvas1.bind('<button-1>', self.printear) #lo que va a hacer que se puedan seleccionar los
+<br>        #                                               circulos para ver lasdiferentes gráficas obtenidas
+<br>        #                                               mediante la recolección y el procesamiento de datos
+<br>
+<br>
+<br>    def fourier_transform(self,N,f):
+<br>        F = abs(fft(f)/N)
+<br>        return F
+<br>
+<br>    def filtering_signal(self,f,nyq,order):
+<br>        cutoffh=1
+<br>        normal_cutoff = cutoffh/nyq
+<br>        b, a = signal.butter(order, normal_cutoff, btype='highpass', analog = False)
+<br>        xf = signal.lfilter(b,a,f)
+<br>
+<br>        cutoffl=20 
+<br>        normal_cutoffl = cutoffl/nyq
+<br>        bl, al = signal.butter(order, normal_cutoffl, btype='lowpass', analog = False)
+<br>        xfl = signal.lfilter(bl,al,xf)
+<br>
+<br>        return xf,xfl
+<br>
+<br>    def window_signal(self,N,f):
+<br>        window = signal.kaiser(N,beta = 14)
+<br>        wx=f*window
+<br>        return wx
+<br>
+<br>    def passband_filter(self,f,order,nyq):
+<br>        cobl = 1.5
+<br>        cobh = 15
+<br>        normal_cobl = cobl/nyq
+<br>        normal_cobh = cobh/nyq
+<br>        bw, aw = signal.butter(order, [normal_cobl,normal_cobh], btype='band', analog = False)
+<br>        ff = signal.lfilter(bw,aw,f)
+<br>        return ff      
+<br>        
+<br>
+<br>if __name__ == "__main__": 
+<br>    window = Window()
+<br>    window.mainloop()&nbsp;<br></button-1></button-1></button-1></p>
                                 </div>
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-header" role="tab" id="headingThree">
-                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_102" aria-expanded="false" aria-controls="collapse3">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_20" aria-expanded="false" aria-controls="collapse3">
                                     <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Interfaz</strong></h6>
                                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                                 </a>
                             </div>
-                            <div id="collapse3_102" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div id="collapse3_20" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    <p class="mbr-fonts-style panel-text display-7">Yes, Mobirise is free for both non-profit and commercial sites.</p>
+                                    <p class="mbr-fonts-style panel-text display-7">import serial,time
+<br>import matplotlib.pyplot as plt
+<br>import numpy as np
+<br>from scipy.fftpack import fft, fftfreq
+<br>from scipy import signal
+<br>import pandas as pd
+<br>import plotly.graph_objects as go
+<br>from scipy.signal import find_peaks
+<br>
+<br>def fourier_transform(N,f):
+<br>    F = abs(fft(f)/N)
+<br>    return F
+<br>
+<br>def filtering_signal(f,nyq,order):
+<br>    cutoffh=1
+<br>    normal_cutoff = cutoffh/nyq
+<br>    b, a = signal.butter(order, normal_cutoff, btype='highpass', analog = False)
+<br>    xf = signal.lfilter(b,a,f)
+<br>
+<br>    cutoffl=20 
+<br>    normal_cutoffl = cutoffl/nyq
+<br>    bl, al = signal.butter(order, normal_cutoffl, btype='lowpass', analog = False)
+<br>    xfl = signal.lfilter(bl,al,xf)
+<br>
+<br>    return xf,xfl
+<br>
+<br>def window_signal(N,f):
+<br>    window = signal.kaiser(N,beta = 14)
+<br>    wx=f*window
+<br>    return wx
+<br>
+<br>def passband_filter(f,order,nyq):
+<br>    cobl = 1.5
+<br>    cobh = 15
+<br>    normal_cobl = cobl/nyq
+<br>    normal_cobh = cobh/nyq
+<br>    bw, aw = signal.butter(order, [normal_cobl,normal_cobh], btype='band', analog = False)
+<br>    ff = signal.lfilter(bw,aw,f)
+<br>    return ff
+<br>    
+<br>
+<br>fs=104
+<br>N=1000
+<br>nyq = 0.5*fs
+<br>n=list(range(0,N))
+<br>t=1/fs
+<br>frq=fftfreq(N,t)
+<br>
+<br>arduinoData = serial.Serial('COM3', 9600)
+<br>time.sleep(1)
+<br>xl=[]
+<br>yl=[]
+<br>zl=[]
+<br>a=True
+<br>while a:
+<br>    while(arduinoData.inWaiting()==0):
+<br>        pass
+<br>    dataPacket = arduinoData.readline()
+<br>    dataPacket = str(dataPacket,'utf-8')
+<br>    dataPacket = dataPacket.strip('\r\n')
+<br>    splitPacket = dataPacket.split(",")
+<br>    x = float(splitPacket[0])
+<br>    y = float(splitPacket[1])
+<br>    z = float(splitPacket[2])
+<br>    xl.append(x)
+<br>    yl.append(y)
+<br>    zl.append(z)
+<br>    if len(xl)==N:
+<br>        a=False
+<br>    if len(yl)==N:
+<br>        a=False
+<br>    if len(zl)==N:
+<br>        a=False
+<br>
+<br>order = 3
+<br>[xlow,xhigh] = filtering_signal(xl,nyq,order)
+<br>[ylow,yhigh] = filtering_signal(yl,nyq,order)
+<br>[zlow,zhigh] = filtering_signal(zl,nyq,order)
+<br>xf = passband_filter(xhigh,order,nyq)
+<br>yf = passband_filter(yhigh,order,nyq)
+<br>zf = passband_filter(zhigh,order,nyq)
+<br>xfw = window_signal(N,xf)
+<br>yfw = window_signal(N,yf)
+<br>zfw = window_signal(N,zf)
+<br>
+<br>X=fourier_transform(N,xfw)
+<br>Y=fourier_transform(N,yfw)
+<br>Z=fourier_transform(N,zfw)
+<br>
+<br>plt.subplot(3,2,1)
+<br>plt.plot(n,xfw)
+<br>plt.subplot(3,2,2)
+<br>plt.ylim(0,1)
+<br>plt.plot(frq,X)
+<br>
+<br>plt.subplot(3,2,3)
+<br>plt.plot(n,yfw)
+<br>plt.subplot(3,2,4)
+<br>plt.ylim(0,1)
+<br>plt.plot(frq,Y)
+<br>
+<br>plt.subplot(3,2,5)
+<br>plt.plot(n,zfw)
+<br>plt.subplot(3,2,6)
+<br>plt.ylim(0,1)
+<br>plt.plot(frq,Z)
+<br>plt.show()
+<br>
+<br>#Para hallar los picos del movimiento 
+<br>height_threshold=0.15 # We need a threshold. 
+<br># peaks_index contains the indices in x that correspond to peaks:
+<br>peaks_index, properties = find_peaks(np.abs(X), height=height_threshold)
+<br>peaks_indexy, propertiesy = find_peaks(np.abs(Y), height=height_threshold)
+<br>peaks_indexz, propertiesz = find_peaks(np.abs(Z), height=height_threshold)
+<br># 1) peaks_index does not contain the frequency values but indices
+<br># 2) In this case, properties will contain only one property: 'peak_heights'
+<br>#    for each element in peaks_index (See help(find_peaks) )
+<br># Let's first output the result to the terminal window:
+<br>print('Positions and magnitude of frequency peaks x:')
+<br>[print("%4.4f    \t %3.4f" %(frq[peaks_index[i]], properties['peak_heights'][i])) for i in range(len(peaks_index))]
+<br>print('Positions and magnitude of frequency peaks y:')
+<br>[print("%4.4f    \t %3.4f" %(frq[peaks_indexy[a]], propertiesy['peak_heights'][a])) for a in range(len(peaks_indexy))]
+<br>print('Positions and magnitude of frequency peaks z:')
+<br>[print("%4.4f    \t %3.4f" %(frq[peaks_indexz[b]], propertiesz['peak_heights'][b])) for b in range(len(peaks_indexz))]
+<br>
+<br># Figure-2: The frequencies
+<br>plt.plot(frq, np.abs(X),'-', frq[peaks_index],properties['peak_heights'],'x')
+<br>plt.xlabel("Frequency x")
+<br>plt.ylabel("Amplitude x")
+<br>plt.show()
+<br>plt.plot(frq, np.abs(Y),'-', frq[peaks_indexy],propertiesy['peak_heights'],'x')
+<br>plt.xlabel("Frequency y")
+<br>plt.ylabel("Amplitude y")
+<br>plt.show()
+<br>plt.plot(frq, np.abs(Z),'-', frq[peaks_indexz],propertiesz['peak_heights'],'x')
+<br>plt.xlabel("Frequency z")
+<br>plt.ylabel("Amplitude z")
+<br>plt.show()
+<br>
+<br></p>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +1085,7 @@
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2912447" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Built with &#8204;</p><a style="z-index:1" href="https://mobirise.com">Mobirise </a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2912447" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Built with &#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html">HTML Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>

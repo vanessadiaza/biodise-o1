@@ -6652,6 +6652,57 @@ a {
 .cid-tp74VWDz6x .iconfont-wrapper {
   color: #ffffff;
 }
+.cid-tpuzFcrm6b {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fff1de;
+}
+.cid-tpuzFcrm6b img,
+.cid-tpuzFcrm6b .item-img {
+  width: 100%;
+}
+.cid-tpuzFcrm6b .item:focus,
+.cid-tpuzFcrm6b span:focus {
+  outline: none;
+}
+.cid-tpuzFcrm6b .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tpuzFcrm6b .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #ffbc66;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tpuzFcrm6b .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tpuzFcrm6b .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tpuzFcrm6b .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tpuzFcrm6b .mbr-section-title {
+  color: #232323;
+}
+.cid-tpuzFcrm6b .mbr-text,
+.cid-tpuzFcrm6b .mbr-section-btn {
+  text-align: left;
+}
+.cid-tpuzFcrm6b .item-title {
+  text-align: left;
+}
+.cid-tpuzFcrm6b .item-subtitle {
+  text-align: center;
+}
 .cid-tp74JoQAJt {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -6680,7 +6731,7 @@ a {
 .cid-tp74K32slW {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #fff1de;
+  background-image: url("../../../assets/images/fondo-510x340.jpeg");
 }
 .cid-tp74K32slW .mbr-fallback-image.disabled {
   display: none;
